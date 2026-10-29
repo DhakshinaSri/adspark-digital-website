@@ -1,0 +1,88 @@
+import {
+  LuArrowRight,
+  LuBriefcase,
+  LuBuilding2,
+  LuChartColumn,
+  LuCheck,
+  LuChevronDown,
+  LuCirclePlay,
+  LuClapperboard,
+  LuCpu,
+  LuEye,
+  LuFactory,
+  LuGraduationCap,
+  LuHandshake,
+  LuHeartHandshake,
+  LuInfo,
+  LuLayers,
+  LuLightbulb,
+  LuMegaphone,
+  LuMenu,
+  LuMessageSquare,
+  LuPalette,
+  LuPuzzle,
+  LuRefreshCw,
+  LuRepeat,
+  LuRocket,
+  LuSearch,
+  LuShare2,
+  LuShieldCheck,
+  LuShoppingBag,
+  LuSparkles,
+  LuStethoscope,
+  LuTarget,
+  LuUserRound,
+  LuUtensilsCrossed,
+  LuWallet,
+  LuX,
+} from "react-icons/lu";
+
+const ICONS = {
+  // generic
+  arrow: LuArrowRight,
+  check: LuCheck,
+  menu: LuMenu,
+  close: LuX,
+  chevron: LuChevronDown,
+  info: LuInfo,
+  // services
+  social: LuShare2,
+  ads: LuMegaphone,
+  seo: LuSearch,
+  youtube: LuCirclePlay,
+  branding: LuPalette,
+  content: LuClapperboard,
+  strategy: LuChartColumn,
+  // mission / vision / values
+  mission: LuTarget,
+  vision: LuEye,
+  creativity: LuLightbulb,
+  transparency: LuShieldCheck,
+  commitment: LuHeartHandshake,
+  adaptability: LuRefreshCw,
+  partnership: LuHandshake,
+  // why choose
+  fit: LuPuzzle,
+  purpose: LuSparkles,
+  communication: LuMessageSquare,
+  budget: LuWallet,
+  consistency: LuLayers,
+  relationship: LuRepeat,
+  // industries
+  startup: LuRocket,
+  health: LuStethoscope,
+  education: LuGraduationCap,
+  manufacturing: LuFactory,
+  retail: LuShoppingBag,
+  realestate: LuBuilding2,
+  professional: LuBriefcase,
+  hospitality: LuUtensilsCrossed,
+  technology: LuCpu,
+  personal: LuUserRound,
+};
+
+// Icons are decorative: the text next to them carries the meaning.
+export default function Icon({ name, size = 24, className = "" }) {
+  const Cmp = ICONS[name] || LuCheck;
+  return <Cmp size={size} className={className} aria-hidden="true" focusable="false" />;
+}
