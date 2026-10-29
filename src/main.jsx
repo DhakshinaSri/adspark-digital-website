@@ -19,7 +19,7 @@ here = normalize(here || "/");
 
 const app = (
   <StrictMode>
-    <Router basename="{basename}">
+    <Router basename="/adspark-digital-website">
       <App />
     </Router>
   </StrictMode>
